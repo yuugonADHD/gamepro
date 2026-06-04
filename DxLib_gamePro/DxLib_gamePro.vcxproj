@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7f9b7356-e461-4b64-8fa8-f2207c1cf4d1}</ProjectGuid>
+    <RootNamespace>DxLib_gamePro</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Camera\Camera.cpp" />
+    <ClCompile Include="src\Collision\Collision2D.cpp" />
+    <ClCompile Include="src\Collision\Collision3D.cpp" />
+    <ClCompile Include="src\Light\Light.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Audio\AudioManager.cpp" />
+    <ClCompile Include="src\Input\InputManager.cpp" />
+    <ClCompile Include="src\Model\Model.cpp" />
+    <ClCompile Include="src\Primitive3D\Primitive3D.cpp" />
+    <ClCompile Include="src\Scene\BaseScene.cpp" />
+    <ClCompile Include="src\Scene\GameScene2D.cpp" />
+    <ClCompile Include="src\Scene\GameScene3D.cpp" />
+    <ClCompile Include="src\Scene\SpaceScene.cpp" />
+    <ClCompile Include="src\Scene\ResultScene.cpp" />
+    <ClCompile Include="src\Scene\SceneManager.cpp" />
+    <ClCompile Include="src\Scene\TitleScene.cpp" />
+    <ClCompile Include="src\ShadowMap\ShadowMap.cpp" />
+    <ClCompile Include="src\Sprite\Sprite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Camera\Camera.h" />
+    <ClInclude Include="src\Collision\AABBCollider.h" />
+    <ClInclude Include="src\Collision\Collision2D.h" />
+    <ClInclude Include="src\Collision\CapsuleCollider.h" />
+    <ClInclude Include="src\Collision\Collision3D.h" />
+    <ClInclude Include="src\Collision\SphereCollider.h" />
+    <ClInclude Include="src\Common\Constants.h" />
+    <ClInclude Include="src\Audio\AudioManager.h" />
+    <ClInclude Include="src\Input\InputManager.h" />
+    <ClInclude Include="src\Light\Light.h" />
+    <ClInclude Include="src\Model\Model.h" />
+    <ClInclude Include="src\Primitive3D\Primitive3D.h" />
+    <ClInclude Include="src\Scene\BaseScene.h" />
+    <ClInclude Include="src\Scene\GameScene2D.h" />
+    <ClInclude Include="src\Scene\GameScene3D.h" />
+    <ClInclude Include="src\Scene\ResultScene.h" />
+    <ClInclude Include="src\Scene\SceneManager.h" />
+    <ClInclude Include="src\Scene\SpaceScene.h" />
+    <ClInclude Include="src\Scene\TitleScene.h" />
+    <ClInclude Include="src\ShadowMap\ShadowMap.h" />
+    <ClInclude Include="src\Sprite\Sprite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\.gitkeep" />
+    <None Include="packages.config" />
+    <None Include="README.md" />
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DxLib" Version="*" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\DxLib.vc140.3.2.4.3\build\native\DxLib.vc140.targets" Condition="Exists('packages\DxLib.vc140.3.2.4.3\build\native\DxLib.vc140.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>縺薙・繝励Ο繧ｸ繧ｧ繧ｯ繝医・縲√％縺ｮ繧ｳ繝ｳ繝斐Η繝ｼ繧ｿ繝ｼ荳翫↓縺ｪ縺・NuGet 繝代ャ繧ｱ繝ｼ繧ｸ繧貞盾辣ｧ縺励※縺・∪縺吶ゅ◎繧後ｉ縺ｮ繝代ャ繧ｱ繝ｼ繧ｸ繧偵ム繧ｦ繝ｳ繝ｭ繝ｼ繝峨☆繧九↓縺ｯ縲ーNuGet 繝代ャ繧ｱ繝ｼ繧ｸ縺ｮ蠕ｩ蜈ゾ 繧剃ｽｿ逕ｨ縺励∪縺吶りｩｳ邏ｰ縺ｫ縺､縺・※縺ｯ縲”ttp://go.microsoft.com/fwlink/?LinkID=322105 繧貞盾辣ｧ縺励※縺上□縺輔＞縲りｦ九▽縺九ｉ縺ｪ縺・ヵ繧｡繧､繝ｫ縺ｯ {0} 縺ｧ縺吶</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\DxLib.vc140.3.2.4.3\build\native\DxLib.vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\DxLib.vc140.3.2.4.3\build\native\DxLib.vc140.targets'))" />
+  </Target>
+</Project>

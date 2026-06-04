@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{A1111111-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Audio">
+      <UniqueIdentifier>{650278f3-f6ba-442b-81af-f46dc41b64d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Camera">
+      <UniqueIdentifier>{B2222222-2222-2222-2222-222222222222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Collision">
+      <UniqueIdentifier>{B3333333-3333-3333-3333-333333333333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Common">
+      <UniqueIdentifier>{3fa4eba8-6fca-45e7-9167-22050a8bed0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Input">
+      <UniqueIdentifier>{f73b4cb0-5dcf-41b0-8de8-b67205dfb05a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Light">
+      <UniqueIdentifier>{B4444444-4444-4444-4444-444444444444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Model">
+      <UniqueIdentifier>{B5555555-5555-5555-5555-555555555555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Primitive3D">
+      <UniqueIdentifier>{B6666666-6666-6666-6666-666666666666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{c77f7f0e-3efa-4c46-bdc2-54f10268147a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ShadowMap">
+      <UniqueIdentifier>{B7777777-7777-7777-7777-777777777777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Sprite">
+      <UniqueIdentifier>{5b4af9d0-ea95-4a92-8d63-b1f8d625dc23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{A7777777-7777-7777-7777-777777777777}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio\AudioManager.cpp">
+      <Filter>src\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera\Camera.cpp">
+      <Filter>src\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Collision\Collision2D.cpp">
+      <Filter>src\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Collision\Collision3D.cpp">
+      <Filter>src\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\InputManager.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Light\Light.cpp">
+      <Filter>src\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model\Model.cpp">
+      <Filter>src\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Primitive3D\Primitive3D.cpp">
+      <Filter>src\Primitive3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\BaseScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\GameScene2D.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\GameScene3D.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\SpaceScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\ResultScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\SceneManager.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\TitleScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShadowMap\ShadowMap.cpp">
+      <Filter>src\ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sprite\Sprite.cpp">
+      <Filter>src\Sprite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Audio\AudioManager.h">
+      <Filter>src\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera\Camera.h">
+      <Filter>src\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collision\AABBCollider.h">
+      <Filter>src\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collision\Collision2D.h">
+      <Filter>src\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collision\CapsuleCollider.h">
+      <Filter>src\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collision\Collision3D.h">
+      <Filter>src\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collision\SphereCollider.h">
+      <Filter>src\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\Constants.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\InputManager.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Light\Light.h">
+      <Filter>src\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Model\Model.h">
+      <Filter>src\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Primitive3D\Primitive3D.h">
+      <Filter>src\Primitive3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\BaseScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\GameScene2D.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\GameScene3D.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SpaceScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\ResultScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SceneManager.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\TitleScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShadowMap\ShadowMap.h">
+      <Filter>src\ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sprite\Sprite.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\.gitkeep">
+      <Filter>assets</Filter>
+    </None>
+    <None Include="README.md" />
+    <None Include=".gitignore" />
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
